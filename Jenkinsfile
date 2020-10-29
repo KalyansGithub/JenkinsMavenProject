@@ -4,27 +4,29 @@ pipeline
 	stages 
   {
 		stage("clean") 
-    {
+                 {
 			steps {
-			    {
+			             
 					echo "clean"
-			    }
-       }
-    }
+			             
+                              }
+                 }
 		stage("Testing") 
-    {
+                {
 			steps {
-				      {
+				      
 					echo "testing"
-				      }
-            }
-     }
-		stage("Packaging") {
+				      
+                              }
+                }
+		stage("Packaging") 
+	        {
 			steps {
-				      {
-				echo "Package"
-				      }
-            }
+				    
+				       echo "Package"
+				   
+                              }
 	       }
+	  
   }
 }
